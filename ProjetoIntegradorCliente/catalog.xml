@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:3000/BancarioService?wsdl" uri="xml-resources/web-service-references/BancarioService/wsdl/localhost_3000/BancarioService.wsdl"/>
+    <system systemId="http://localhost:3000/BancarioService?wsdl=1" uri="xml-resources/web-service-references/BancarioService/wsdl/localhost_3000/BancarioService.wsdl_1.wsdl"/>
+    <system systemId="http://localhost:3000/BancarioService?xsd=1" uri="xml-resources/web-service-references/BancarioService/wsdl/localhost_3000/BancarioService.xsd_1.xsd"/>
+</catalog>
