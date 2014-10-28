@@ -12,7 +12,9 @@ public class App {
             BancarioService servico = acesso.getBancarioServicePort();
 
             OperadorBancario operador = 
-                            new br.edu.servico.OperadorBancario(servico);
+                            new br.edu.servico.OperadorBancario(
+                                    "http://localhost:4000/transacao",
+                                    servico);
             
             public void run() {
                 new JanelaCliente(operador).setVisible(true);

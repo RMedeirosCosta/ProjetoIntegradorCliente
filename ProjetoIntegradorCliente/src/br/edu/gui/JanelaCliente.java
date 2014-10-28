@@ -16,7 +16,7 @@ public class JanelaCliente extends JFrame {
 
     // Constantes para melhorar a visualização 
     private static final Integer COMPRIMENTO = 400;
-    private static final Integer LARGURA     = 205;    
+    private static final Integer LARGURA     = 220;    
     
     // Componentes visuais organizados hierarquicamente
     private JButton btnCriarConta;    
