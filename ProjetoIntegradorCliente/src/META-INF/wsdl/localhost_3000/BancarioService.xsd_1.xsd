@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is JAX-WS RI 2.2.9-b130926.1035 svn-revision#5f6196f2b90e9460065a4c2f4e30e065b245e51e. --><xs:schema xmlns:tns="http://contrato.edu.br/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://contrato.edu.br/">
+<?xml version="1.0" encoding="UTF-8"?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2.4-b01. --><xs:schema xmlns:tns="http://contrato.edu.br/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://contrato.edu.br/">
 
 <xs:element name="Exception" type="tns:Exception"></xs:element>
 
@@ -22,14 +22,14 @@
 
 <xs:element name="fecharContaResponse" type="tns:fecharContaResponse"></xs:element>
 
-<xs:complexType name="efetuarDeposito">
+<xs:complexType name="efetuarSaque">
 <xs:sequence>
 <xs:element name="numeroConta" type="xs:long"></xs:element>
-<xs:element name="valorDepositado" type="xs:double"></xs:element>
+<xs:element name="valorSacado" type="xs:double"></xs:element>
 </xs:sequence>
 </xs:complexType>
 
-<xs:complexType name="efetuarDepositoResponse">
+<xs:complexType name="efetuarSaqueResponse">
 <xs:sequence>
 <xs:element name="resposta" type="xs:string" minOccurs="0"></xs:element>
 </xs:sequence>
@@ -38,18 +38,6 @@
 <xs:complexType name="Exception">
 <xs:sequence>
 <xs:element name="message" type="xs:string" minOccurs="0"></xs:element>
-</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="consultarSaldo">
-<xs:sequence>
-<xs:element name="numeroConta" type="xs:long"></xs:element>
-</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="consultarSaldoResponse">
-<xs:sequence>
-<xs:element name="saldoConta" type="xs:double"></xs:element>
 </xs:sequence>
 </xs:complexType>
 
@@ -78,16 +66,28 @@
 </xs:sequence>
 </xs:complexType>
 
-<xs:complexType name="efetuarSaque">
+<xs:complexType name="efetuarDeposito">
 <xs:sequence>
 <xs:element name="numeroConta" type="xs:long"></xs:element>
-<xs:element name="valorSacado" type="xs:double"></xs:element>
+<xs:element name="valorDepositado" type="xs:double"></xs:element>
 </xs:sequence>
 </xs:complexType>
 
-<xs:complexType name="efetuarSaqueResponse">
+<xs:complexType name="efetuarDepositoResponse">
 <xs:sequence>
 <xs:element name="resposta" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="consultarSaldo">
+<xs:sequence>
+<xs:element name="numeroConta" type="xs:long"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="consultarSaldoResponse">
+<xs:sequence>
+<xs:element name="saldoConta" type="xs:double"></xs:element>
 </xs:sequence>
 </xs:complexType>
 </xs:schema>
